@@ -3,213 +3,211 @@
 <head>
     <meta charset="UTF-8">
 
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Week 2 Day 1 Advanced CSS project">
+    <meta name="description" content="Responsive Design Landing Page">
 
-    <title>Advanced CSS | Week 2 Day 1</title>
+    <title>Responsive Design</title>
 
-    <link rel="stylesheet" href="advanced_styles.css">
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Sticky Navigation -->
-    <header class="site-header">
-
+    <!-- Navigation -->
+    <header>
         <nav class="navbar">
 
-            <div class="logo">
-                CSS Advanced
-            </div>
+            <h2 class="logo">WebDesign</h2>
 
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#animation">Animation</a>
-                <a href="#about">About</a>
-            </div>
-
-            <!-- Theme Switcher -->
-            <label class="theme-switch">
-                <input type="checkbox" id="themeToggle">
-                <span class="slider"></span>
-                <span class="theme-text">Dark Mode</span>
-            </label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
         </nav>
-
     </header>
 
 
-    <!-- Main Content -->
-    <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-        <!-- Home Section -->
-        <section id="home" class="hero">
+        <div class="hero-content">
 
-            <div class="hero-content">
+            <p class="subtitle">RESPONSIVE WEB DESIGN</p>
 
-                <p class="small-title">WEEK 2 — DAY 1</p>
-
-                <h1>Advanced CSS Techniques</h1>
-
-                <p>
-                    Learn CSS custom properties, animations,
-                    pseudo-elements, sticky navigation and
-                    smooth scrolling.
-                </p>
-
-                <a href="#features" class="button">
-                    Explore Features
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- Features Section -->
-        <section id="features" class="section">
-
-            <h2>Advanced CSS Features</h2>
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <div class="card-icon">🎨</div>
-
-                    <h3>CSS Variables</h3>
-
-                    <p>
-                        Custom properties make it easy to
-                        manage colors, spacing and themes.
-                    </p>
-
-                </article>
-
-
-                <article class="card">
-
-                    <div class="card-icon">✨</div>
-
-                    <h3>Pseudo Elements</h3>
-
-                    <p>
-                        Use ::before and ::after to create
-                        decorative UI elements.
-                    </p>
-
-                </article>
-
-
-                <article class="card">
-
-                    <div class="card-icon">🚀</div>
-
-                    <h3>Animations</h3>
-
-                    <p>
-                        Create smooth and attractive
-                        animations using CSS keyframes.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Animation Section -->
-        <section id="animation" class="section animation-section">
-
-            <h2>CSS Animations</h2>
-
-            <div class="animation-container">
-
-                <!-- Loading Spinner -->
-                <div class="spinner"></div>
-
-                <p>Loading...</p>
-
-            </div>
-
-
-            <!-- Progress Bar -->
-            <div class="progress-container">
-
-                <h3>Project Progress</h3>
-
-                <div class="progress-bar">
-
-                    <div class="progress">
-                        <span>80%</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Pseudo Element Section -->
-        <section class="section">
-
-            <h2 class="decorated-title">
-                Pseudo Elements
-            </h2>
-
-            <p class="pseudo-text">
-                This heading uses CSS ::before and ::after
-                pseudo-elements for decoration.
-            </p>
-
-        </section>
-
-
-        <!-- About Section -->
-        <section id="about" class="section about">
-
-            <h2>About This Project</h2>
+            <h1>Build Websites That Look Great Everywhere</h1>
 
             <p>
-                This project demonstrates advanced CSS
-                techniques used to create modern,
-                responsive and interactive web interfaces.
+                Create modern and responsive websites that work perfectly
+                on mobile phones, tablets and desktop computers.
             </p>
 
-        </section>
+            <a href="#features" class="button">
+                Explore Features
+            </a>
 
-    </main>
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+
+        <div class="section-title">
+            <p class="subtitle">OUR FEATURES</p>
+
+            <h2>Why Choose Us?</h2>
+
+            <p>
+                Modern features for creating better websites.
+            </p>
+        </div>
+
+
+        <!-- CSS Grid -->
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="icon">📱</div>
+
+                <h3>Mobile Friendly</h3>
+
+                <p>
+                    Our website automatically adjusts to different
+                    mobile screen sizes.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+
+                <h3>Fast Performance</h3>
+
+                <p>
+                    Clean and optimized code helps websites load
+                    quickly.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+
+                <h3>Modern Design</h3>
+
+                <p>
+                    Beautiful and simple designs provide a better
+                    user experience.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">💻</div>
+
+                <h3>Responsive Layout</h3>
+
+                <p>
+                    The layout works on phones, tablets and
+                    desktop computers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+
+        <div class="section-title">
+
+            <p class="subtitle">TESTIMONIALS</p>
+
+            <h2>What Our Users Say</h2>
+
+        </div>
+
+
+        <!-- Flexbox -->
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The website looks amazing on my phone and laptop."
+                </p>
+
+                <h3>— Priya</h3>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The responsive design makes the website very easy
+                    to use."
+                </p>
+
+                <h3>— Rahul</h3>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The design is simple, clean and user-friendly."
+                </p>
+
+                <h3>— Ananya</h3>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
 
-        <p>
-            © 2026 Advanced CSS | Week 2 Day 1
+        <div class="footer-content">
+
+            <div>
+                <h2>WebDesign</h2>
+
+                <p>
+                    Creating responsive websites for everyone.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Email: webdesign@example.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 WebDesign. All Rights Reserved.
         </p>
 
     </footer>
-
-
-    <!-- Theme JavaScript -->
-    <script>
-
-        const themeToggle =
-            document.getElementById("themeToggle");
-
-        themeToggle.addEventListener("change", function () {
-
-            document.body.classList.toggle("dark-theme");
-
-        });
-
-    </script>
 
 </body>
 </html>
