@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS Flexbox & Grid</title>
+    <meta name="description" content="Responsive Design Landing Page">
 
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Design</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
 
-            <div class="logo">WebDesign</div>
+            <h2 class="logo">WebDesign</h2>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -29,93 +34,179 @@
 
 
     <!-- Hero Section -->
-    <main>
+    <section id="home" class="hero">
 
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>CSS Flexbox & Grid</h1>
+        <div class="hero-content">
+
+            <p class="subtitle">RESPONSIVE WEB DESIGN</p>
+
+            <h1>Build Websites That Look Great Everywhere</h1>
+
+            <p>
+                Create modern and responsive websites that work perfectly
+                on mobile phones, tablets and desktop computers.
+            </p>
+
+            <a href="#features" class="button">
+                Explore Features
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+
+        <div class="section-title">
+            <p class="subtitle">OUR FEATURES</p>
+
+            <h2>Why Choose Us?</h2>
+
+            <p>
+                Modern features for creating better websites.
+            </p>
+        </div>
+
+
+        <!-- CSS Grid -->
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="icon">📱</div>
+
+                <h3>Mobile Friendly</h3>
 
                 <p>
-                    Build responsive and modern web layouts
-                    using CSS Flexbox and Grid.
+                    Our website automatically adjusts to different
+                    mobile screen sizes.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+
+                <h3>Fast Performance</h3>
+
+                <p>
+                    Clean and optimized code helps websites load
+                    quickly.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+
+                <h3>Modern Design</h3>
+
+                <p>
+                    Beautiful and simple designs provide a better
+                    user experience.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">💻</div>
+
+                <h3>Responsive Layout</h3>
+
+                <p>
+                    The layout works on phones, tablets and
+                    desktop computers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+
+        <div class="section-title">
+
+            <p class="subtitle">TESTIMONIALS</p>
+
+            <h2>What Our Users Say</h2>
+
+        </div>
+
+
+        <!-- Flexbox -->
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The website looks amazing on my phone and laptop."
                 </p>
 
-                <a href="#features" class="btn">Explore Features</a>
-            </div>
-        </section>
-
-
-        <!-- Grid Section -->
-        <section id="features" class="features">
-
-            <h2>Our Features</h2>
-
-            <div class="card-grid">
-
-                <div class="card">
-                    <h3>Flexbox</h3>
-                    <p>
-                        Flexbox is useful for arranging elements
-                        in rows or columns.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-
-                <div class="card">
-                    <h3>CSS Grid</h3>
-                    <p>
-                        CSS Grid helps create two-dimensional
-                        layouts using rows and columns.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-
-                <div class="card">
-                    <h3>Responsive Design</h3>
-                    <p>
-                        Responsive design makes websites work
-                        properly on mobile, tablet and desktop.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
+                <h3>— Priya</h3>
 
             </div>
 
-        </section>
 
+            <div class="testimonial-card">
 
-        <!-- Services -->
-        <section id="services" class="services">
+                <p>
+                    "The responsive design makes the website very easy
+                    to use."
+                </p>
 
-            <h2>Why Use CSS Layouts?</h2>
-
-            <div class="service-container">
-
-                <div>
-                    <h3>Easy Alignment</h3>
-                    <p>Flexbox makes alignment simple and flexible.</p>
-                </div>
-
-                <div>
-                    <h3>Structured Layout</h3>
-                    <p>Grid makes complex page layouts easier to manage.</p>
-                </div>
-
-                <div>
-                    <h3>Responsive</h3>
-                    <p>Both systems can be combined to create responsive websites.</p>
-                </div>
+                <h3>— Rahul</h3>
 
             </div>
 
-        </section>
 
-    </main>
+            <div class="testimonial-card">
+
+                <p>
+                    "The design is simple, clean and user-friendly."
+                </p>
+
+                <h3>— Ananya</h3>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- Footer -->
     <footer id="contact">
-        <p>© 2026 WebDesign | CSS Flexbox & Grid</p>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>WebDesign</h2>
+
+                <p>
+                    Creating responsive websites for everyone.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Email: webdesign@example.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 WebDesign. All Rights Reserved.
+        </p>
+
     </footer>
 
 </body>
