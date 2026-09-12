@@ -1,0 +1,280 @@
+/* ------------------------------
+   Basic Reset
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* ------------------------------
+   Navigation - Flexbox
+------------------------------ */
+
+header {
+    background: #222;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+
+.hero {
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background: #ddd;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #222;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+
+/* ------------------------------
+   CSS Grid - 3 Column Cards
+------------------------------ */
+
+.features {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+.features h2,
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   Services - Flexbox
+------------------------------ */
+
+.services {
+    padding: 70px 20px;
+    background: #e9e9e9;
+}
+
+.service-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.service-container > div {
+    flex: 1;
+
+    background: white;
+    padding: 25px;
+
+    border-radius: 8px;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #222;
+    color: white;
+}
+
+
+/* ------------------------------
+   Tablet
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
+
+/* ------------------------------
+   Mobile
+------------------------------ */
+
+@media (max-width: 480px) {
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features h2,
+    .services h2 {
+        font-size: 26px;
+    }
+}
